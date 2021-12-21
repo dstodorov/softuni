@@ -5,6 +5,13 @@ import java.util.Scanner;
 
 public class test {
     public static void main(String[] args) {
-        System.out.println("TEST 2");
+        String testString = "!!!1!1!0!!!0!1!0!0!!0".replace("!", " ").trim();
+        String cleared = "";
+        for (int i = 0; i <testString.length(); i++) {
+            if (testString.charAt(i) == '0' || testString.charAt(i) == '1') {
+                cleared += testString.charAt(i) + " ";
+            }
+        }
+
     }
 }
