@@ -1,17 +1,33 @@
 package SoftUni.fundamentals;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
+import java.util.function.Function;
 
 public class test {
     public static void main(String[] args) {
-        String testString = "!!!1!1!0!!!0!1!0!0!!0".replace("!", " ").trim();
-        String cleared = "";
-        for (int i = 0; i <testString.length(); i++) {
-            if (testString.charAt(i) == '0' || testString.charAt(i) == '1') {
-                cleared += testString.charAt(i) + " ";
-            }
-        }
+        //Java 7
+//        Runnable r = new Runnable() {
+//            @Override
+//            public void run() {
+//                System.out.println("Running in Runnable thread");
+//            }
+//        };
+//
+//        r.run();
+//        System.out.println("Running in main thread");
 
+        //Java 8
+//        Runnable r = () -> {
+//            System.out.println("Running in Runnable thread");
+//        };
+//
+//        r.run();
+//        System.out.println("Running in main thread");
+
+        List<Integer> numbers = Arrays.asList(11,1,23,24,123,152);
+
+        numbers.forEach(number -> System.out.print(number + " "));
     }
 }
