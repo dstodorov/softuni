@@ -1,4 +1,4 @@
-package SoftUni.fundamentalsJanuary.Arrays.lab;
+package SoftUni.fundamentalsJanuary.arrays.lab;
 
 import java.util.Arrays;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package SoftUni.fundamentalsJanuary.Arrays.exercises;
+package SoftUni.fundamentalsJanuary.arrays.exercises;
 
 import java.util.Scanner;
 
