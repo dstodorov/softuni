@@ -17,42 +17,31 @@ public class P06PlantDiscovery {
             String[] plantDetails = scanner.nextLine().split("<->");
             String plantName = plantDetails[0];
             int plantRarity = Integer.parseInt(plantDetails[1]);
-
+            plantRatings.putIfAbsent(plantName, new ArrayList<>());
             plants.put(plantName, plantRarity);
         }
 
         String input = scanner.nextLine();
 
         while (!input.equals("Exhibition")) {
-            Pattern pattern = Pattern.compile("\\b(?<command>\\w+): (?<plantName>\\w+)(\\s-\\s(?<rating>\\d+))?\\b");
-            Matcher matcher = pattern.matcher(input);
+            String[] inputCommands = input.split("\\s+");
+            String plant = inputCommands[1];
 
-            if (matcher.find()) {
-                String command = matcher.group("command");
-                String plant = matcher.group("plantName");
 
-                if (plants.containsKey(plant)) {
-                    if (command.equals("Rate")) {
-                        double rating = Double.parseDouble(matcher.group("rating"));
-                        if (plantRatings.containsKey(plant)) {
-                            plantRatings.get(plant).add(rating);
-                        } else {
-                            List<Double> ratingList = new ArrayList<>();
-                            ratingList.add(rating);
-                            plantRatings.put(plant, ratingList);
-                        }
-                    } else if (command.equals("Update")) {
-                        int rarity = Integer.parseInt(matcher.group("rating"));
-                        plants.put(plant, rarity);
-                    } else if (command.equals("Reset")) {
-                        if (plantRatings.containsKey(plant)) {
-                            plantRatings.get(plant).clear();
-                        }
-                    }
-                } else {
-                    System.out.println("error");
+            if (!plants.containsKey(plant)) {
+                System.out.println("error");
+            } else {
+                if (inputCommands[0].contains("Rate")) {
+                    Double rating = Double.parseDouble(inputCommands[3]);
+                    plantRatings.get(plant).add(rating);
+                } else if (inputCommands[0].contains("Update")) {
+                    Integer rarity = Integer.parseInt(inputCommands[3]);
+                    plants.put(plant, rarity);
+                } else if (inputCommands[0].contains("Reset")) {
+                    plantRatings.get(plant).clear();
                 }
             }
+
             input = scanner.nextLine();
         }
 
