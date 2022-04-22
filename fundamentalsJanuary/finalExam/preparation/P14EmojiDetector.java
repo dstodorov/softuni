@@ -18,6 +18,7 @@ public class P14EmojiDetector {
 
         Pattern pattern = Pattern.compile("([:]{2}|[*]{2})(?<emoji>[A-Z][a-z]{2,})\\1");
         Matcher matcher = pattern.matcher(text);
+        Pattern p = Pattern.compile("<([\\s\\S]+)>(?<text>[^<>]+)</\\1>");
 
         while (matcher.find()) {
             validEmojis++;
