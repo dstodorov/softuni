@@ -1,4 +1,4 @@
-package SoftUni.advancedMay.multidimensionalArrays.lab;
+package SoftUni.advancedMay.multidimensionalArrays.exercises;
 
 import java.util.Scanner;
 
