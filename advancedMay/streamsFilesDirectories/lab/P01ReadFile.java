@@ -16,7 +16,7 @@ public class P01ReadFile {
                 oneByte = in.read();
             }
         } catch (IOException e) {
-            //TODO
+            e.printStackTrace();
         }
     }
 }
