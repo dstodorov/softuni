@@ -43,36 +43,36 @@
 - ####  Labs
     | Exercise                           | Link                        |
     | ------------------------------     | --------------------------- |
-    | -| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/lab/P01ExcellentResult.java|
-    | -| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/lab/P02GreaterNumber.java|
-    | -| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/lab/P03EvenOrOdd.java|
-    | -| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/lab/P04PasswordGuess.java|
-    | -| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/lab/P05Number100to200.java|
-    | -| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/lab/P06SpeedInfo.java|
-    | -| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/lab/P07AreaOfFigures.java|
+    | Excellent Result| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/lab/P01ExcellentResult.java|
+    | Greated Numvber | https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/lab/P02GreaterNumber.java|
+    | Even Or Odd| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/lab/P03EvenOrOdd.java|
+    | Password Guess| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/lab/P04PasswordGuess.java|
+    | Number 100 to 200| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/lab/P05Number100to200.java|
+    | Speed Info| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/lab/P06SpeedInfo.java|
+    | Area Of Figures| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/lab/P07AreaOfFigures.java|
 - ####  Exercises
     | Exercise                           | Link                        |
     | ------------------------------     | --------------------------- |
-    | -| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/exercises/P01SumSeconds.java|
-    | -| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/exercises/P02BonusScore.java|
-    | -| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/exercises/P03TimePlus15Minutes.java|
-    | -| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/exercises/P04ToyShop.java|
-    | -| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/exercises/P05GodzillaVSKong.java|
-    | -| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/exercises/P06WorldSwimmingRecord.java|
-    | -| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/exercises/P07Shopping.java|
-    | -| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/exercises/P08LunchBreak.java|
+    | Sum Seconds| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/exercises/P01SumSeconds.java|
+    | Bonus Score| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/exercises/P02BonusScore.java|
+    | Time Plus 15 Minutes| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/exercises/P03TimePlus15Minutes.java|
+    | Toy Shop| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/exercises/P04ToyShop.java|
+    | Godzilla VS Kong| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/exercises/P05GodzillaVSKong.java|
+    | World Swimming Record| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/exercises/P06WorldSwimmingRecord.java|
+    | Shopping| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/exercises/P07Shopping.java|
+    | Lunch Break| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/exercises/P08LunchBreak.java|
 - ####  More Exercises
     | Exercise                           | Link                        |
     | ------------------------------     | --------------------------- |
-    | -| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/moreExercises/P01PipesInPool.java|
-    | -| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/moreExercises/P02SleepyTomCat.java|
-    | -| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/moreExercises/P03Harvest.java|
-    | -| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/moreExercises/P04TransportPrice.java|
-    | -| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/moreExercises/P05Firm.java|
-    | -| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/moreExercises/P06Pets.java|
-    | -| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/moreExercises/P07FlowerShop.java|
-    | -| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/moreExercises/P08FuelTank.java|
-    | -| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/moreExercises/P09FuelTankPart2.java|
+    | Pipes In Pool| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/moreExercises/P01PipesInPool.java|
+    | Sleepy Tom Cat| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/moreExercises/P02SleepyTomCat.java|
+    | Harvest| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/moreExercises/P03Harvest.java|
+    | Transport Price| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/moreExercises/P04TransportPrice.java|
+    | Firm| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/moreExercises/P05Firm.java|
+    | Pets| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/moreExercises/P06Pets.java|
+    | Flower Shop| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/moreExercises/P07FlowerShop.java|
+    | Fuel Tank| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/moreExercises/P08FuelTank.java|
+    | Fuel Tank part 2| https://github.com/dstodorov/softuni/blob/main/basics/conditionalStatements/moreExercises/P09FuelTankPart2.java|
  - ## Conditional Statements Advanced
  - ## For Loops
  - ## While Loops
