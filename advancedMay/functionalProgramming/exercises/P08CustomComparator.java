@@ -1,22 +1,25 @@
 package SoftUni.advancedMay.functionalProgramming.exercises;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class P07FindTheSmallestElement {
+public class P08CustomComparator {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
         List<Integer> numbers = Arrays.stream(scanner.nextLine().split("\\s+")).map(Integer::parseInt).collect(Collectors.toList());
 
-        Function<List<Integer>, Integer> getSmallestNumberIndex = listOfNumbers -> listOfNumbers
-                .lastIndexOf(listOfNumbers.stream()
-                        .min(Integer::compareTo)
-                        .orElse(0));
+        Comparator<Integer> compare = (n1, n2) -> {
+            if (n1 % 2 == 0 && n2 % 2 != 0) return -1;
+            else if (n1 % 2 != 0 && n2 % 2 == 0) return 1;
 
-        System.out.println(getSmallestNumberIndex.apply(numbers));
+            return n1.compareTo(n2);
+        };
+
+        numbers.stream().sorted(compare).forEach(number -> System.out.print(number + " "));
     }
 }
