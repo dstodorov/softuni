@@ -1,4 +1,4 @@
-package SoftUni.advancedMay.examPreparation.exam5;
+package SoftUni.advancedMay.examPreparation.exam05;
 
 import java.util.*;
 import java.util.stream.Collectors;
