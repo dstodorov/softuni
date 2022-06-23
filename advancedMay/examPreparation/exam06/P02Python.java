@@ -74,7 +74,7 @@ public class P02Python {
 
         if (foodNeeded == foodCollected) {
             System.out.println("You win! Final python length is " + pythonLength);
-        } else if (commandsExecuted == commands.length) {
+        } else if (commandsExecuted == commands.length && !foundEnemy) {
             System.out.println("You lose! There is still " + (foodNeeded - foodCollected) + " food to be eaten.");
         }
         if (foundEnemy) {
