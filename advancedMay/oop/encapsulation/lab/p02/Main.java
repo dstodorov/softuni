@@ -1,4 +1,4 @@
-package SoftUni.oop.encapsulation.lab.p02;
+package SoftUni.advancedMay.oop.encapsulation.lab.p02;
 
 import java.io.BufferedReader;
 import java.io.IOException;

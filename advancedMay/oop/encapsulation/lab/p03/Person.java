@@ -1,4 +1,4 @@
-package SoftUni.oop.encapsulation.lab.p03;
+package SoftUni.advancedMay.oop.encapsulation.lab.p03;
 
 public class Person {
 
