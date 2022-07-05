@@ -1,7 +1,5 @@
 package SoftUni.advancedMay.oop.inheritance.exercises.person;
 
-import person.Child;
-
 import java.util.Scanner;
 
 public class Main {
