@@ -46,7 +46,7 @@ public class Main {
                     if (validCorps(engineer.getCorps())) printSoldier(engineer);
                     break;
 
-                case "Commando": {
+                case "Commando":
                     double commandoSalary = Double.parseDouble(inputParams[4]);
 
                     String soldierCorps = inputParams[5];
@@ -56,7 +56,6 @@ public class Main {
                     if (validCorps(commando.getCorps())) printSoldier(commando);
                     break;
 
-                }
                 case "Spy":
                     String soldierCodeNumber = inputParams[4];
 
