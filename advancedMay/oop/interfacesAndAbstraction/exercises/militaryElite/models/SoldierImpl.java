@@ -1,4 +1,6 @@
-package SoftUni.advancedMay.oop.interfacesAndAbstraction.exercises.militaryElite;
+package SoftUni.advancedMay.oop.interfacesAndAbstraction.exercises.militaryElite.models;
+
+import SoftUni.advancedMay.oop.interfacesAndAbstraction.exercises.militaryElite.interfaces.Soldier;
 
 public abstract class SoldierImpl implements Soldier {
     private int id;

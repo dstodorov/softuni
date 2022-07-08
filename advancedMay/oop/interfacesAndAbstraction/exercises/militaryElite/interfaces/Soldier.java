@@ -1,4 +1,4 @@
-package SoftUni.advancedMay.oop.interfacesAndAbstraction.exercises.militaryElite;
+package SoftUni.advancedMay.oop.interfacesAndAbstraction.exercises.militaryElite.interfaces;
 
 public interface Soldier {
     int getId();

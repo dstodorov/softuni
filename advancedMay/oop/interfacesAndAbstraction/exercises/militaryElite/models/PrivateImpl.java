@@ -1,4 +1,6 @@
-package SoftUni.advancedMay.oop.interfacesAndAbstraction.exercises.militaryElite;
+package SoftUni.advancedMay.oop.interfacesAndAbstraction.exercises.militaryElite.models;
+
+import SoftUni.advancedMay.oop.interfacesAndAbstraction.exercises.militaryElite.interfaces.Private;
 
 public class PrivateImpl extends SoldierImpl implements Private {
     private double salary;

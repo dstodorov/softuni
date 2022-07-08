@@ -1,5 +1,8 @@
 package SoftUni.advancedMay.oop.interfacesAndAbstraction.exercises.militaryElite;
 
+import SoftUni.advancedMay.oop.interfacesAndAbstraction.exercises.militaryElite.interfaces.Spy;
+import SoftUni.advancedMay.oop.interfacesAndAbstraction.exercises.militaryElite.models.*;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -46,13 +49,8 @@ public class Main {
                         Repair repair = new Repair(inputParams[i], Integer.parseInt(inputParams[i + 1]));
                         repairs.add(repair);
                     }
-                    try{
-                        Engineer engineer = new EngineerImpl(id, soldierFirstName, soldierLastName, soldierSalary, soldierCorps, repairs);
-                        System.out.println(engineer);
-                    } catch (IllegalArgumentException e) {
-                        //continue;
-                    }
-
+                    EngineerImpl engineer = new EngineerImpl(id, soldierFirstName, soldierLastName, soldierSalary, soldierCorps, repairs);
+                    if (!engineer.getCorps().equals("invalid")) System.out.println(engineer);
                     break;
                 }
                 case "Commando": {
@@ -60,20 +58,12 @@ public class Main {
                     String soldierCorps = inputParams[5];
                     List<Mission> missions = new ArrayList<>();
                     for (int i = 6; i < inputParams.length; i += 2) {
-                        try {
-                            Mission mission = new Mission(inputParams[i], inputParams[i + 1]);
-                            missions.add(mission);
-                        } catch (IllegalArgumentException e) {
-
-                        }
-
+                        Mission mission = new Mission(inputParams[i], inputParams[i + 1]);
+                        if (!mission.getState().equals("invalid")) missions.add(mission);
                     }
-                    try{
-                        Commando commando = new CommandoImpl(id, soldierFirstName, soldierLastName, soldierSalary, soldierCorps, missions);
-                        System.out.println(commando);
-                    } catch (IllegalArgumentException e) {
 
-                    }
+                    CommandoImpl commando = new CommandoImpl(id, soldierFirstName, soldierLastName, soldierSalary, soldierCorps, missions);
+                    if (!commando.getCorps().equals("invalid")) System.out.println(commando);
                     break;
                 }
                 case "Spy": {
