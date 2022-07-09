@@ -1,4 +1,4 @@
-package SoftUni.oop.workingWithAbstraction.exercises.cardRank;
+package SoftUni.advancedMay.oop.workingWithAbstraction.exercises.cardRank;
 
 public enum CardRanks {
     ACE(0),

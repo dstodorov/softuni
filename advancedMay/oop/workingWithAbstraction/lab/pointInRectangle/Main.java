@@ -1,4 +1,4 @@
-package SoftUni.oop.workingWithAbstraction.lab.pointInRectangle;
+package SoftUni.advancedMay.oop.workingWithAbstraction.lab.pointInRectangle;
 
 import java.util.Arrays;
 import java.util.Scanner;

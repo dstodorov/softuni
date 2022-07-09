@@ -1,4 +1,4 @@
-package SoftUni.oop.workingWithAbstraction.lab;
+package SoftUni.advancedMay.oop.workingWithAbstraction.lab;
 
 import java.util.Scanner;
 

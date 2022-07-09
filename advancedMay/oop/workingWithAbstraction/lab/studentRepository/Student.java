@@ -1,4 +1,4 @@
-package SoftUni.oop.workingWithAbstraction.lab.studentRepository;
+package SoftUni.advancedMay.oop.workingWithAbstraction.lab.studentRepository;
 
 public class Student {
     private String name;

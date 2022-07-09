@@ -1,4 +1,4 @@
-package SoftUni.oop.workingWithAbstraction.exercises.cardSuit;
+package SoftUni.advancedMay.oop.workingWithAbstraction.exercises.cardSuit;
 
 import java.util.Scanner;
 

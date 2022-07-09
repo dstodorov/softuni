@@ -1,4 +1,4 @@
-package SoftUni.oop.workingWithAbstraction.lab.hotelReservation;
+package SoftUni.advancedMay.oop.workingWithAbstraction.lab.hotelReservation;
 
 import java.util.Scanner;
 

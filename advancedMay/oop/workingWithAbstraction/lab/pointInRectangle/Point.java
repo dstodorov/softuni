@@ -1,4 +1,4 @@
-package SoftUni.oop.workingWithAbstraction.lab.pointInRectangle;
+package SoftUni.advancedMay.oop.workingWithAbstraction.lab.pointInRectangle;
 
 public class Point {
     private int x;

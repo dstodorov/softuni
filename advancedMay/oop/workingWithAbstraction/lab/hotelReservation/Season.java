@@ -1,4 +1,4 @@
-package SoftUni.oop.workingWithAbstraction.lab.hotelReservation;
+package SoftUni.advancedMay.oop.workingWithAbstraction.lab.hotelReservation;
 
 public enum Season {
     AUTUMN("Autumn", 1),

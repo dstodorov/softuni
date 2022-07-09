@@ -1,4 +1,4 @@
-package SoftUni.oop.workingWithAbstraction.exercises.jediGalaxy;
+package SoftUni.advancedMay.oop.workingWithAbstraction.exercises.jediGalaxy;
 
 import java.util.Arrays;
 import java.util.Scanner;

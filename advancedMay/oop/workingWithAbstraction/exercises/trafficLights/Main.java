@@ -1,4 +1,4 @@
-package SoftUni.oop.workingWithAbstraction.exercises.trafficLights;
+package SoftUni.advancedMay.oop.workingWithAbstraction.exercises.trafficLights;
 
 import java.util.ArrayList;
 import java.util.List;
