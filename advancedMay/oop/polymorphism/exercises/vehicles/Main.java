@@ -1,49 +1,44 @@
 package SoftUni.advancedMay.oop.polymorphism.exercises.vehicles;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
         Scanner scanner = new Scanner(System.in);
 
-        String[] carInfo = scanner.nextLine().split("\\s+");
+        Map<String, Vehicle> vehicles = new LinkedHashMap<>();
 
-        double carFuelQuantity = Double.parseDouble(carInfo[1]);
-        double carFuelConsumptionPerKm = Double.parseDouble(carInfo[2]);
-        Vehicle car = new Car(carFuelQuantity, carFuelConsumptionPerKm);
+        int vehiclesNumber = 2;
 
-        String[] truckInfo = scanner.nextLine().split("\\s+");
+        for (int i = 0; i < vehiclesNumber; i++) {
+            String[] vehicleInfo = scanner.nextLine().split("\\s+");
+            String vehicleType = vehicleInfo[0];
+            double vehicleFuelQuantity = Double.parseDouble(vehicleInfo[1]);
+            double vehicleFuelConsumption = Double.parseDouble(vehicleInfo[2]);
 
-        double truckFuelQuantity = Double.parseDouble(truckInfo[1]);
-        double truckFuelConsumptionPerKm = Double.parseDouble(truckInfo[2]);
-        Vehicle truck = new Truck(truckFuelQuantity, truckFuelConsumptionPerKm);
-
+            if (vehicleType.equals("Car")) {
+                vehicles.put(vehicleType, new Car(vehicleFuelQuantity, vehicleFuelConsumption));
+            } else if (vehicleType.equals("Truck")) {
+                vehicles.put(vehicleType, new Truck(vehicleFuelQuantity, vehicleFuelConsumption));
+            }
+        }
         int numberOfCommands = Integer.parseInt(scanner.nextLine());
 
         for (int i = 0; i < numberOfCommands; i++) {
-            String[] commandParams = scanner.nextLine().split("\\s+");
-            String command = commandParams[0];
-            String vehicleType = commandParams[1];
-
+            String[] commandInput = scanner.nextLine().split("\\s+");
+            String vehicleType = commandInput[1];
+            String command = commandInput[0];
             if (command.equals("Drive")) {
-                double distance = Double.parseDouble(commandParams[2]);
-                if (vehicleType.equals("Car")) {
-                    car.drive(distance);
-                } else if (vehicleType.equals("Truck")) {
-                    truck.drive(distance);
-                }
+                double distance = Double.parseDouble(commandInput[2]);
+                System.out.println(vehicles.get(vehicleType).drive(distance));
             } else if (command.equals("Refuel")) {
-                double litters = Double.parseDouble(commandParams[2]);
-                if (vehicleType.equals("Car")) {
-                    car.refuel(litters);
-                } else if (vehicleType.equals("Truck")) {
-                    truck.refuel(litters);
-                }
+                double litters = Double.parseDouble(commandInput[2]);
+                vehicles.get(vehicleType).refuel(litters);
             }
-
         }
 
-        System.out.println(car);
-        System.out.println(truck);
+        vehicles.values().forEach(System.out::println);
     }
 }
